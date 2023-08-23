@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* sugestão (@avlye )*/
+    /* usar box-sizing: border-box; */
+    /* para ajudar a calcular o padding extra no nav e evitar a barra de rolagem lateral no navegador */
+    /* se não conseguir, overflow-x: hidden; deve ajudar */
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Zenzai';
+    src:  url('fonts/made_in_china/MADEC___.TTF');
+          
+  }
+
+/*Cabecalho*/
+
+header{
+    
+    padding:  1.3rem;
+    background-image: url("img/38130.jpg");
+    background-position: center;
+    background-size: cover ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: yellow;
+    height: 15rem;
+    
+   
+    
+  
+    
+}
+
+header h1{
+   
+    z-index: 0;
+    padding: 1rem;
+    border-top: 4px solid rgb(255, 230, 0);
+    border-bottom: 4px solid rgb(255, 230, 0);
+    font-family: 'Zenzai';
+    font-weight: bold;
+    font-size: 3rem;
+    z-index: 2;
+    letter-spacing: 15px;
+    filter: drop-shadow(0px 3px 0px rgb(0, 0, 0)) ;
+    
+
+}
+
+
+
+#meiotop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+/*Imagens laterais do header*/
+.leao{
+    
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.648));
+     max-width: 100%;
+     width: 18rem;
+    
+     
+  
+}
+/*box-Imagen central do header*/
+#img-meio{
+    height: 11rem;
+
+/*Imagen central do header*/ 
+}
+#star{
+    z-index: 0;
+    width: 23rem;
+    z-index: 0;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.648));
+  
+}
+
+/*Menu-de-navegacao*/
+
+nav{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(15, 15, 15),rgb(29, 29, 29)) ;
+    padding: 0.6rem;
+    gap: 2rem;
+    letter-spacing: 0.15rem;
+    
+    z-index: 1;
+    
+}
+
+nav a{
+    color: white;
+   
+    text-decoration: none;
+    font-weight: bolder;
+    background-position: left;
+    transition: 1s;
+    z-index: 0;
+    
+}
+
+nav>a:hover{
+    
+    background-position: right;
+    color: white;
+    color: yellow;
+}
+
+/*Posicionamento padrado da pagina*/
+main{
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        
+        
+        
+
+}
+
+
+
+/*Rodape da pagina(Links paras redes e imformações adiconais)*/
+footer{
+
+    background-image: url(img/38130.jpg);
+    background-size: cover;
+    background-position:  center;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p{
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.redes h3{
+    border: 3px  solid yellow;
+    color: yellow;
+
+}
+.img-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+   
+}
+.img-redes img{
+        
+ 
+    width: 3rem;
+
+}
