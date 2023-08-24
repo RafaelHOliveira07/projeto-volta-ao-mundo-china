@@ -132,7 +132,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-        
+    width: 100%;
+    background-image:linear-gradient(to bottom, rgb(107, 5, 5),rgb(78, 4, 4),rgb(36, 2, 2));
+    
         
         
 
@@ -143,7 +145,7 @@ main{
 /*Rodape da pagina(Links paras redes e imformações adiconais)*/
 footer{
 
-    background-image: url(img/38130.jpg);
+    background-image: url('img/38130.jpg');
     background-size: cover;
     background-position:  center;
     height: 20rem;

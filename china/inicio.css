@@ -17,12 +17,18 @@
 
 /*conteudo central*/
 
-
-
-
 .meio{
+
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.meio-inicio{
     
-    width: 100%;
+    
     padding: 2rem 0;
     background-image: url("img/fundo-de-papel-texturizado-vintage-sujo.jpg");
     background-size: cover;
@@ -37,7 +43,7 @@
 
 }
 
-.meio h1,h3{
+.meio-inicio h1,h3{
 
         color: rgb(203, 8, 8);
         font-family: 'Zenzai';
@@ -45,15 +51,15 @@
 
 }
 
-.meio h1{
+.meio-inicio h1{
     font-size: 5rem;
 }
-.meio h3{
+.meio-inicio h3{
     font-size: 3rem;
 }
 
 
-.meio p{
+.meio-inicio p{
     width: 40rem;
     text-align: justify;
     text-align: center;
@@ -66,7 +72,7 @@
     
 }
 
-.meio img{
+.meio-inicio img{
   
     
    width: 20rem;
