@@ -22,14 +22,16 @@
     width: 80rem;
     display: flex;
     flex-direction: column;
-
+    border-left: 2rem dashed rgba(202, 202, 21, 0.582);
+    border-right: 2rem dashed rgba(255, 255, 0, 0.514);
+    padding: 0 4rem;
 }
 
 
 .meio-inicio{
     
     
-    padding: 2rem 0;
+    padding: 5rem 0;
     background-image: url("img/fundo-de-papel-texturizado-vintage-sujo.jpg");
     background-size: cover;
     background-position: center;
@@ -52,32 +54,32 @@
 }
 
 .meio-inicio h1{
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 .meio-inicio h3{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
 .meio-inicio p{
+    letter-spacing: 0.3rem;
     width: 40rem;
-    text-align: justify;
+    font-family: 'Zenzei';
     text-align: center;
-    font-weight: bolder;
-    margin-top: 1rem;
+    font-weight: bold;
+    padding: 2rem 0;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
    
 
     
 }
 
 .meio-inicio img{
-  
-    
-   width: 20rem;
- 
    
+   width: 20rem;
+
    
 }
 
@@ -85,9 +87,9 @@
 
 /*secao 02,03,04,05*/
 
-.sec02,.sec03,.sec04,.sec05{
+.sec-turismo,.sec-politica,.sec-religiao,.sec-culinaria{
     width: 100%;
-    height: 50rem;
+    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,31 +97,47 @@
     
 
 }
-.sec02{
+.sec-turismo{
     background-image: url('img/692368.jpg');
 }
-.sec03{
-    background-image: url();
+.sec-politica{
+    background-image: url('img/agronegocios-China-810x512.jpg');
+    
 }
-.sec04{
-    background-image: url('img/692368.jpg');
+.sec-culinaria{
+    background-image: url('img/pexels-cats-coming-1907228.jpg');
 }
-.sec05{
+.sec-religiao{
     background-image: url('img/wallpaperbetter.com_1920x1080\ \(1\).jpg');
 }
+
 .link-m {
     
     color: white;
     font-size: 3rem;
     text-decoration: none;
+    transform: scale(1);
+    transition: 1s ;
+    
 }
 
 .text-sec{
-    
     width: 100%;
-   height: 50rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: brightness(60%);
+    transition: 1s ease ;
+    backdrop-filter: brightness(70%);
+    backdrop-filter: blur(10%);
 }
+
+
+ .link-m:hover {
+    
+    color: yellow;
+    backdrop-filter: brightness(20%);
+    backdrop-filter: blur(50%);
+ 
+}
+
