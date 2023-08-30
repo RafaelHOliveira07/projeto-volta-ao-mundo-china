@@ -19,12 +19,12 @@
 
 .meio{
 
-    width: 80rem;
+    width: 75rem;
     display: flex;
     flex-direction: column;
-    border-left: 2rem dashed rgba(202, 202, 21, 0.582);
-    border-right: 2rem dashed rgba(255, 255, 0, 0.514);
-    padding: 0 4rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.76);
+   
 }
 
 
@@ -89,11 +89,16 @@
 
 .sec-turismo,.sec-politica,.sec-religiao,.sec-culinaria{
     width: 100%;
-    height: 40rem;
+    height: 45rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-   
+    background-position: top;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease ;
+    
     
 
 }
@@ -117,27 +122,41 @@
     font-size: 3rem;
     text-decoration: none;
     transform: scale(1);
-    transition: 1s ;
+    
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.61);
+    transition: 0.6s;
+    
+    
+}
+
+.text-sec,.link-m{
+    width: 100%;
+    height: 100%;
+    
+    backdrop-filter: blur(0px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .text-sec{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s ease ;
-    backdrop-filter: brightness(70%);
-    backdrop-filter: blur(10%);
-}
-
-
- .link-m:hover {
     
-    color: yellow;
-    backdrop-filter: brightness(20%);
-    backdrop-filter: blur(50%);
- 
+    background-color: rgba(0, 0, 0, 0.671);
 }
 
+ 
+
+.text-sec:hover .link-m{
+    
+    color:rgb(235, 160, 0);
+    transform: scale(1.2);
+
+    
+}
+
+.text-sec:hover {
+   
+    background-color: rgba(0, 0, 0, 0.815);
+    backdrop-filter: blur(5px); 
+}
