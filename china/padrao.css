@@ -151,11 +151,11 @@ main{
 /*Rodape da pagina(Links paras redes e imformações adiconais)*/
 footer{
 
-    
+    padding: 1rem 0.3rem;
     background-image: url('img/38130.jpg');
     background-size: cover;
     background-position:  center;
-    height: 20rem;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,13 +164,21 @@ footer{
 }
 
 footer p{
+   
+    height: 1rem;
     font-size: smaller;
     color: rgb(235, 160, 0);
     text-align: center;
+    
     font-family: Arial, Helvetica, sans-serif;
 }
 .redes{
-    margin-top: 2rem;
+    height: max-content;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5rem;    
 }
 .redes h3{
     padding: 0.3rem 1.5rem;
@@ -184,19 +192,14 @@ footer p{
 
 }
 .img-redes{
+
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    gap: 1rem;
+    gap: 4rem;
    
 }
-.img-redes img{
-        
- 
-    width: 3rem;
 
-}
 
 .fa {
     border: 0.2rem solid rgb(58, 5, 5);
